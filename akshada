@@ -1,0 +1,85 @@
+ <!--header starts-->
+            <div class="hero_slider wrapper">
+                <div class="hero_slider__wrapper">
+                    <div class="hero_silder_nav container">
+                        <nav class="navbar navbar-expand-md">
+                            
+                            <!--logo-->
+                            <a class="navbar-brand" id="brand_name"> BLU<span>E</span>ASY </a> 
+                            
+                            <!--for collapsible navbar -->
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                                <i class="fas fa-bars"></i>
+                            </button>
+
+                            <!--navbar links-->
+                            <div class="collapse navbar-collapse " id="collapsibleNavbar">
+                                <ul class="nav navbar-nav">
+                                    <li class="nav-item active"> <a class="active" href="#home"> HOME </a> </li>
+                                    <li class="nav-item"> <a class="nav-link" href="#Services"> SERVICES </a> </li>
+                                    <li class="nav-item"> <a class="nav-link" href="#features"> FEATURES </a> </li>
+                                    <li class="nav-item"> <a class="nav-link" href="#portfolio"> PORTFOLIO </a> </li>
+                                    <li class="nav-item"> <a class="nav-link" href="#Contact"> CONTACT </a> </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    
+                    <div class="center_heading">
+                        <p class="font-weight-lighter"> <span> "I'M LOOKING FOR THE UNEXPECTED. </span> </p> 
+                        <p class="font-weight-lighter"> <span> I'M LOOKING FOR THINGS I'VE NEVER SEEN BEFORE." </span> </p>
+                    </div>
+                    
+                </div>
+            </div> 
+            <!-- header ends-->
+
+.hero_slider {
+    background-image: url("../images/hero_slider.png");
+    filter: grayscale(60%);
+    background-size: cover;
+    height: 450px;
+    position: relative;
+    
+}
+
+
+.hero_slider__wrapper .center_heading{position: absolute;  top: 50%; left: 50%; transform: translate(-50%, -50%); }
+.hero_slider__wrapper .center_heading > p{color: white; background-color: #4d4d4d; text-align: center; font-size: larger; padding:14px }
+.hero_slider__wrapper .center_heading > p span{  text-align: center; }
+
+@media only screen and (max-width: 767px){
+    .hero_slider__wrapper .center_heading{ display: none;}
+
+}
+
+#brand_name{ color: white; 
+    / margin-right: 600px; /
+}
+
+#brand_name > span{ color: #00BFFF;}
+
+.hero_slider__wrapper  {background: rgba(0,0,0,0.6);}
+.hero_silder_nav{ padding: 0 8% 0 8%;}
+.hero_slider__wrapper .hero_silder_nav >nav #collapsibleNavbar{justify-content: flex-end;}
+.hero_slider__wrapper .hero_silder_nav >nav  ul { 
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;  
+    / margin-left: 50px;   /
+}
+ 
+.hero_slider__wrapper .hero_silder_nav > nav ul li { 
+    float: right;
+}
+
+.hero_slider__wrapper .hero_silder_nav > nav ul li a{ 
+    display: inline-block; 
+    padding: 12px 12px;
+    text-decoration: none;
+    color: whitesmoke;
+
+}
+
+.hero_slider__wrapper .hero_silder_nav> nav ul li a:hover{border: 2px solid #00BFFF; color: #00BFFF;}
